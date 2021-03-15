@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
 
-const Test = (props) =>{
+const Home_1 = (props) =>{
+    const middle = {
+        margin: "20% 30% 0%",
+    }
     const [message,setMessage] = useState("");
     
     const changeDiv = () =>{
@@ -8,13 +11,12 @@ const Test = (props) =>{
         props.setMessage(message);
     }
     return(
-        <div>
-            <form className="Homepage" onSubmit={changeDiv}>
-            <input type = "text" placeholder="請輸入訊息" onChange={(e) => {setMessage(e.target.value)}} value={message}/>
-            <input name = "submit" type = "submit"/>
+        <div style={middle} >
+            <form  onSubmit={changeDiv} >
+            <input type = "search" placeholder="請輸入訊息" onChange={(e) => {setMessage(e.target.value)}} value={message} style={{width: "100%",height: "30px"}}/>
             </form>
         </div>
     )
 }
 
-export default Test;
+export default Home_1;

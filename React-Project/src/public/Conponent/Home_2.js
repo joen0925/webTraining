@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Test2 = (props) =>{
+
+const Home_2 = (props) =>{
     return(
-        <p>{props.message}</p>
+        <div>
+            <p>您輸入的關鍵字:{props.message}</p>
+        </div>
     )
 }
 
-export default Test2;
+export default Home_2;

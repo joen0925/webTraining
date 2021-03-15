@@ -2,23 +2,34 @@ import React from "react";
 import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
 import Home from "./Conponent/Home";
 import About from "./Conponent/About";
+import Hot from "./Conponent/Hot";
+import Report from "./Conponent/Report";
+import stytles from "./Css/Menu.css"
+
 const Menu = () => {
+  
     return(
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
+      <div >
+            <div className={stytles.flex}>
+              <Link className={stytles.flex_1} to="/">新聞彙整系統</Link>
+              <Link className={stytles.flex_1} to="/report">問題回報</Link>
+              <Link className={stytles.flex_1} to="/hot">熱門搜尋</Link>
+              <Link className={stytles.flex_1} to="/about">關於</Link>
+            </div>
         <Switch>
           <Route exact path="/">
-          <Home/>
+          <Home className= "flex-1"/>
           </Route>
-          <Route path="/about" component={About}/>
+          <Route path="/report">
+          <Report/>
+          </Route>
+          <Route path="/hot">
+          <Hot/>
+          </Route>
+          <Route path="/about">
+          <About/>
+          </Route>
         </Switch>
       </div>
     </Router>
@@ -26,3 +37,4 @@ const Menu = () => {
 }
 
 export default Menu;
+
