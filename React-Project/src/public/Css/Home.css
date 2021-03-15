@@ -1,0 +1,131 @@
+/*外部*/
+.flex{
+	display : flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content:flex-start;
+	
+	
+}
+
+
+.item{
+	flex: none;height: 100px; /*可以固定高度*/
+	font-size:1rem;
+	background-color:#3B3B3B;
+	margin: 1px;/*外距*/
+	justify-content: flex-start;/*水平靠上*/
+	align-items:flex-start;
+	
+
+}
+
+/*資訊*/
+.flex-1{
+	flex: none;height: 30px;/*固高*/
+	flex-grow: 1;/*比例*/
+	flex-shrink: 1;/*極限*/
+	flex-basis: 50%;/*寬度*/
+	justify-content: left;/*靠左*/
+	margin: 1px;/*外距*/
+	color: aliceblue;
+	font-size: 25px;
+	
+
+}
+
+/*問題回報*/
+.flex-2{
+	flex: none;height: 30px;/*固高*/
+	flex-grow: 2;/*比例*/
+	flex-shrink: 1;/*極限*/
+	flex-basis: 15%;/*寬度*/
+	justify-content: space-between;
+	color: aliceblue;
+	font-size: 25px;
+}
+
+/*熱門搜尋*/
+.flex-3{
+	flex: none;height: 30px;/*固高*/
+	flex-grow: 2;/*比例*/
+	flex-shrink: 1;/*極限*/
+	flex-basis: 15%;/*寬度*/
+	justify-content: space-between;/*靠左*/
+	color: aliceblue;
+	font-size: 25px;
+}
+
+/*關於*/
+.flex-4{
+	flex: none;height: 30px;/*固高*/
+	flex-grow: 2;/*比例*/
+	flex-shrink: 1;/*極限*/
+	flex-basis: 15%;/*寬度*/
+	justify-content: space-between;/*靠左*/
+	color: aliceblue;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+body{
+background: -webkit-linear-gradient(left,purple,Lightblue);
+background: -o-linear-gradient(right,purple,Lightblue);
+background: -moz-linear-gradient(right,purple,Lightblue);
+background: linear-gradient(to right,purple,Lightblue);
+}
+ 
+/*搜尋欄*/
+.box{
+  margin: 300px 0px 150px 150px;
+  width: 300px;
+  height: 50px;
+	
+}
+/*搜尋*/
+.S {
+	
+	position: absolute;
+	left: 75%;
+	top:43%;
+	font-size: 20px;
+}
+
+
+
+#search{
+  width: 900px;
+  height: 80px;
+position: absolute;
+	left: 27%;
+	top:40%;
+}
+
+/*相關*/
+.text-1{
+	position: absolute;
+	left: 27%;
+	top:50%;
+	border:2px solid #000000;
+	width: 20%;
+	height: 100px;
+	background-color:white;opacity:0.5;
+	
+}
+.text-2{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	border:2px solid #000000;
+	width: 20%;
+	height: 100px;
+	background-color:white;opacity:0.5;
+
+}
+
+
