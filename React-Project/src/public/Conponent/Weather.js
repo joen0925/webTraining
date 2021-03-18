@@ -153,10 +153,9 @@ const Weather = () =>{
             var location = result.records.location;
             var weatherStatus = result.records.location[0].weatherElement;
             for(let i = 0; i < location.length ; i++){
-                citytemp.push(result.records.location[i].locationName);
+                citytemp.push(result.records.location[i].locationName);               
             }
-            citytemp = citytemp.map((citytemp)=><option onChange = {(e) =>{creatData(e.target.key)}} key={citytemp.toString()}>{citytemp}</option>)
-            
+            citytemp = citytemp.map((citytemp)=><option key={citytemp.toString()}>{citytemp}</option>)
             setCity(citytemp);
         })
     }
@@ -172,7 +171,28 @@ const Weather = () =>{
         <div>
             <h3>36小時天氣預報</h3>
             <select >
-                {city}
+               <option>嘉義縣</option>
+               <option>新北市</option>
+               <option>嘉義市</option>
+               <option>新竹縣</option>
+               <option>新竹市</option>
+               <option>臺北市</option>
+               <option>臺南市</option>
+               <option>宜蘭縣</option>
+               <option>苗栗縣</option>
+               <option>雲林縣</option>
+               <option>花蓮縣</option>
+               <option>臺中市</option>
+               <option>臺東縣</option>
+               <option>桃園市</option>
+               <option>南投縣</option>
+               <option>高雄市</option>
+               <option>金門縣</option>
+               <option>屏東縣</option>
+               <option>基隆市</option>
+               <option>澎湖縣</option>
+               <option>彰化縣</option>
+               <option>連江縣</option>
             </select>
         </div>
     )
