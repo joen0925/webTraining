@@ -4,7 +4,7 @@ const Report = () =>{
     return(
         <div>
             <Weather/>
-        </div>
+        </div>     
     )
 }
 
