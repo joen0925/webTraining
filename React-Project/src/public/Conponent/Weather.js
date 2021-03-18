@@ -150,14 +150,19 @@ const Weather = () =>{
         .then(res => {
         return res.json();
         }).then(result => {
-            var location = result.records.location;
-            var weatherStatus = result.records.location[0].weatherElement;
-            for(let i = 0; i < location.length ; i++){
-                citytemp.push(result.records.location[i].locationName);
-            }
-            citytemp = citytemp.map((citytemp)=><option onChange = {(e) =>{creatData(e.target.key)}} key={citytemp.toString()}>{citytemp}</option>)
-            
-            setCity(citytemp);
+            const locationdata = result.records.location[0];
+            const weatherStatus = locationdata.weatherElement.reduce((accumulator, currentValue) =>{
+                if(["Wx","PoP","MinT","CI","MaxT"].includes(currentValue.elementName)){
+                    accumulator[currentValue.elementName] = currentValue.time;
+                }
+                return accumulator;
+            },{});
+            console.log("fetch區塊:" + locationdata.locationName);
+            console.log("fetch區塊:" + weatherStatus.Wx[0].startTime);
+            setData({
+                ...data,
+                locationName: locationdata.locationName,
+            })
         })
     }
     const creatData = (cityName) =>{
@@ -171,9 +176,8 @@ const Weather = () =>{
     return(
         <div>
             <h3>36小時天氣預報</h3>
-            <select >
-                {city}
-            </select>
+            {console.log("123")}
+            {console.log(data.locationName)}
         </div>
     )
 
