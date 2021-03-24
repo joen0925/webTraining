@@ -4,18 +4,18 @@ import Home from "./Conponent/Home";
 import About from "./Conponent/About";
 import Hot from "./Conponent/Hot";
 import Report from "./Conponent/Report";
-import stytles from "./Css/Menu.css"
+import styles from "./Css/Menu.css";
 
 const Menu = () => {
   
     return(
     <Router>
       <div >
-            <div className={stytles.flex}>
-              <Link className={stytles.flex_1} to="/">新聞彙整系統</Link>
-              <Link className={stytles.flex_1} to="/report">問題回報</Link>
-              <Link className={stytles.flex_1} to="/hot">熱門搜尋</Link>
-              <Link className={stytles.flex_1} to="/about">關於</Link>
+            <div className={styles.flex}>
+              <Link className={styles.flex_1} to="/">新聞彙整系統</Link>
+              <Link className={styles.flex_1} to="/report">問題回報</Link>
+              <Link className={styles.flex_1} to="/hot">熱門搜尋</Link>
+              <Link className={styles.flex_1} to="/about">關於</Link>
             </div>
         <Switch>
           <Route exact path="/">
