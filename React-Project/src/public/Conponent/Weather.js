@@ -1,5 +1,7 @@
 import React,{useState, useEffect, useRef} from 'react';
-import styles from "../Css/Weather.css"
+import styles from "../Css/Weather.css";
+import Weather_icon from "./Weather_icon";
+
 const Weather = () =>{
     const [data,setData] = useState({
         locationName: "",
@@ -11,16 +13,19 @@ const Weather = () =>{
                         startTime: "",
                         endTime:"",
                         parameterName:"",
+                        parameterValue:""
                     },
                     {
                         startTime: "",
                         endTime:"",
                         parameterName:"",
+                        parameterValue:""
                     },
                     {
                         startTime: "",
                         endTime:"",
                         parameterName:"",
+                        parameterValue:""
                     },
                 ]
             },
@@ -112,16 +117,19 @@ const Weather = () =>{
                                 startTime: weatherStatus.Wx[0].startTime,
                                 endTime:weatherStatus.Wx[0].endTime,
                                 parameterName:weatherStatus.Wx[0].parameter.parameterName,
+                                parameterValue:weatherStatus.Wx[0].parameter.parameterValue
                             },
                             {
                                 startTime: weatherStatus.Wx[1].startTime,
                                 endTime:weatherStatus.Wx[1].endTime,
                                 parameterName:weatherStatus.Wx[1].parameter.parameterName,
+                                parameterValue:weatherStatus.Wx[1].parameter.parameterValue
                             },
                             {
                                 startTime: weatherStatus.Wx[2].startTime,
                                 endTime:weatherStatus.Wx[2].endTime,
                                 parameterName:weatherStatus.Wx[2].parameter.parameterName,
+                                parameterValue:weatherStatus.Wx[2].parameter.parameterValue
                             },
                         ]
                     },
@@ -198,7 +206,7 @@ const Weather = () =>{
                 <div>最低溫{data.weatherElement[2].time[0].parameterName}°C</div>
             </div>
             <div className = {styles.Tempitem_1}>
-                圖片
+                <Weather_icon/>
             </div>
         </div>
         <div className = {styles.Rainflex} id="降雨機率">降雨{data.weatherElement[1].time[0].parameterName}%</div>
