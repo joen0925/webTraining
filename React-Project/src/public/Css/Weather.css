@@ -8,12 +8,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    border: 3px black solid;
 }
 
 .locationName{
     flex:1;
     font-size: x-large;
+}
+.flex_button{
+    flex:2;
+    background-color: rgb(164, 247, 219);
 }
 .weatherflex{
     display: flex;
