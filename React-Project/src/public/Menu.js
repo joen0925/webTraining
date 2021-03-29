@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
+import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
 import Home from "./Conponent/Home";
 import About from "./Conponent/About";
 import Hot from "./Conponent/Hot";
@@ -19,7 +19,7 @@ const Menu = () => {
             </div>
         <Switch>
           <Route exact path="/">
-          <Home className= "flex-1"/>
+          <Home />
           </Route>
           <Route path="/report">
           <Report/>

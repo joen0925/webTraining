@@ -2,7 +2,7 @@ import React,{useState, useEffect, useRef} from 'react';
 import styles from "../../Css/Weather.css";
 import Weather_icon from "./Weather_icon";
 import WeatherCount from "./WeatherCount";
-
+import Weather_location from "./Weather_location";
 const Weather = () =>{
     const [data,setData] = useState({
         locationName: "",
@@ -75,6 +75,7 @@ const Weather = () =>{
         ]
     });
     const [count,setCount] = useState(0);
+    const [locationTarget, setLocationTarget] = useState(0);
     const url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=rdec-key-123-45678-011121314";
     useEffect(()=>{
         const searchData = async() => {
@@ -82,12 +83,12 @@ const Weather = () =>{
             setData(apiData);
         }
         searchData();
-    },[])
+    },[locationTarget])
     const searchCity = () =>{
         return fetch(url)
         .then((res) => res.json())
         .then(result => {
-            const locationdata = result.records.location[0];
+            const locationdata = result.records.location[locationTarget];
             const weatherStatus = locationdata.weatherElement.reduce((accumulator, currentValue) =>{
                 if(["Wx","PoP","MinT","MaxT"].includes(currentValue.elementName)){
                     accumulator[currentValue.elementName] = currentValue.time;
@@ -174,8 +175,9 @@ const Weather = () =>{
         <div className = {styles.main}>
         <h3 style = {{textAlign:"center"}}>36小時天氣預報</h3>
         <div className = {styles.flex} id = "地點">
-        <div className = {styles.locationName}>{data.locationName}</div>
+        <div className = {styles.locationName}><Weather_location setLocationTarget= {setLocationTarget}/></div>
         <WeatherCount setCount = {setCount} count = {count}/>
+        {console.log(locationTarget)}
         </div>
         <div className = {styles.weatherflex} id = "天氣現象和時間">
             <div className = {styles.weather_1}>{data.weatherElement[0].time[count].parameterName}</div>
