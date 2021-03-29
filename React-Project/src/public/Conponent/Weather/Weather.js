@@ -175,7 +175,7 @@ const Weather = () =>{
         <h3 style = {{textAlign:"center"}}>36小時天氣預報</h3>
         <div className = {styles.flex} id = "地點">
         <div className = {styles.locationName}>{data.locationName}</div>
-        <WeatherCount setCount = {() => setCount()} count = {count}/>
+        <WeatherCount setCount = {setCount} count = {count}/>
         </div>
         <div className = {styles.weatherflex} id = "天氣現象和時間">
             <div className = {styles.weather_1}>{data.weatherElement[0].time[count].parameterName}</div>
