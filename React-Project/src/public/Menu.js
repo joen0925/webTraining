@@ -1,9 +1,9 @@
 import React from "react";
 import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
-import Home from "./Conponent/Home";
-import About from "./Conponent/About";
-import Hot from "./Conponent/Hot";
-import Report from "./Conponent/Report";
+import Home from "./Component/Home";
+import About from "./Component/About";
+import Hot from "./Component/Hot";
+import Report from "./Component/Report";
 import styles from "./Css/Menu.css";
 
 const Menu = () => {

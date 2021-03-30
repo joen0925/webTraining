@@ -95,8 +95,8 @@ const Weather = () =>{
                 }
                 return accumulator;
             },{});
-            console.log("fetch區塊:" + locationdata.locationName);
-            console.log("fetch區塊:" + weatherStatus.Wx[1].parameter.parameterName);
+            /*console.log("fetch區塊:" + locationdata.locationName);
+            console.log("fetch區塊:" + weatherStatus.Wx[1].parameter.parameterName);*/
             return{
                 locationName: locationdata.locationName,
                 weatherElement:[
@@ -177,7 +177,6 @@ const Weather = () =>{
         <div className = {styles.flex} id = "地點">
         <div className = {styles.locationName}><Weather_location setLocationTarget= {setLocationTarget}/></div>
         <WeatherCount setCount = {setCount} count = {count}/>
-        {console.log(locationTarget)}
         </div>
         <div className = {styles.weatherflex} id = "天氣現象和時間">
             <div className = {styles.weather_1}>{data.weatherElement[0].time[count].parameterName}</div>
@@ -190,7 +189,8 @@ const Weather = () =>{
                 <div>最低溫{data.weatherElement[2].time[count].parameterName}°C</div>
             </div>
             <div className = {styles.Tempitem_1}>
-                <Weather_icon/>
+                <Weather_icon parameterValue={data.weatherElement[0].time[count].parameterValue}/>
+                {console.log(data.weatherElement[0].time[count].parameterValue)}
             </div>
         </div>
         <div className = {styles.Rainflex} id="降雨機率">降雨{data.weatherElement[1].time[0].parameterName}%</div>
