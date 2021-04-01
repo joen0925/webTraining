@@ -20,7 +20,7 @@ const Weather_location = (props) => {
     }
     return(
         <div>
-            <select onChange = {(e) => {props.setLocationTarget(e.target.value)}}>
+            <select style = {{width:"100%", fontSize:"20px"}} onChange = {(e) => {props.setLocationTarget(e.target.value)}}>
                 {optionsElement}
             </select>
         </div>

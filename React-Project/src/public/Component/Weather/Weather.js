@@ -95,8 +95,6 @@ const Weather = () =>{
                 }
                 return accumulator;
             },{});
-            /*console.log("fetch區塊:" + locationdata.locationName);
-            console.log("fetch區塊:" + weatherStatus.Wx[1].parameter.parameterName);*/
             return{
                 locationName: locationdata.locationName,
                 weatherElement:[

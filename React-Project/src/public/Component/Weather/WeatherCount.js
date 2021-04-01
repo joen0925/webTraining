@@ -16,9 +16,9 @@ const WeatherCount = (props) =>{
         }
     }
     return(
-        <div style = {{flexGrow:"2",backgroundColor: "rgb(164, 247, 219)"}}>
-            <button onClick = {() => setCount(count - 1)} >{"<"}</button>
-            <button onClick = {() => setCount(count + 1)} >{">"}</button>
+        <div style = {{flexGrow:"2",backgroundColor: "rgb(164, 247, 219)",justifyContent: "center"}}>
+            <button style = {{width:"50%",height:"100%"}} onClick = {() => setCount(count - 1)} >{"<"}</button>
+            <button style = {{width:"50%",height:"100%"}} onClick = {() => setCount(count + 1)} >{">"}</button>
         </div>
     )
 }

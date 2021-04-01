@@ -1,16 +1,16 @@
 import React from "react";
 import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
-import Home from "./Component/Home";
+import Home from "./Component/Home/Home";
 import About from "./Component/About";
 import Hot from "./Component/Hot";
 import Report from "./Component/Report";
+import Weather from "./Component/Weather/Weather";
 import styles from "./Css/Menu.css";
 
 const Menu = () => {
-  
     return(
     <Router>
-      <div >
+      <div>
             <div className={styles.flex}>
               <Link className={styles.flex_1} to="/">新聞彙整系統</Link>
               <Link className={styles.flex_1} to="/report">問題回報</Link>
@@ -31,6 +31,9 @@ const Menu = () => {
           <About/>
           </Route>
         </Switch>
+      </div>
+      <div className={styles.weather_Flex}>
+        <Weather/>
       </div>
     </Router>
     )

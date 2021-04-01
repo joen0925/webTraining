@@ -2,21 +2,16 @@
     width:40%;
     height:auto;
     background-color: rgb(235, 165, 223);
-    border:10px black solid;
+
 }
 .flex{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 3px black solid;
 }
 
 .locationName{
     flex:1;
-}
-.flex_button{
-    flex:2;
-    background-color: rgb(164, 247, 219);
 }
 .weatherflex{
     display: flex;
@@ -49,7 +44,6 @@
 .Tempitem_1{
     flex: 1;
     max-height: 70px;
-    border: 3px brown solid;
 }
 .Rainflex{
     display: flex;

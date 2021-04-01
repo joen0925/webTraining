@@ -3,6 +3,7 @@
 	display : flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	justify-content: flex-end;
 	background-color: #3B3B3B;
 }
 
@@ -13,8 +14,15 @@
 	flex-grow: 1;/*比例*/
 	flex-shrink: 1;/*極限*/
 	flex-basis: 50%;/*寬度*/
-	justify-content: left;/*靠左*/
 	margin: 1px;/*外距*/
 	color: aliceblue;
 	font-size: 25px;
+}
+.weather_Flex{
+	display : flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+	margin: 30px;
 }
