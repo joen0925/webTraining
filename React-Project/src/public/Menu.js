@@ -5,17 +5,16 @@ import About from "./Component/About";
 import Hot from "./Component/Hot";
 import Report from "./Component/Report";
 import Weather from "./Component/Weather/Weather";
-import styles from "./Css/Menu.css";
+import "./Css/Menu.css";
 
 const Menu = () => {
     return(
     <Router>
       <div>
-            <div className={styles.flex}>
-              <Link className={styles.flex_1} to="/">新聞彙整系統</Link>
-              <Link className={styles.flex_1} to="/report">問題回報</Link>
-              <Link className={styles.flex_1} to="/hot">熱門搜尋</Link>
-              <Link className={styles.flex_1} to="/about">關於</Link>
+            <div className="flex">              
+              <Link className="flex-item" to="/report">連絡我們</Link>
+              <Link className="flex-item">｜</Link>
+              <Link className="flex-item" to="/about">關於我們</Link>
             </div>
         <Switch>
           <Route exact path="/">
@@ -31,9 +30,6 @@ const Menu = () => {
           <About/>
           </Route>
         </Switch>
-      </div>
-      <div className={styles.weather_Flex}>
-        <Weather/>
       </div>
     </Router>
     )
