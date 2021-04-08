@@ -2,18 +2,16 @@
     width:40%;
     height:auto;
     background-color: rgb(235, 165, 223);
-    border:10px black solid;
+
 }
 .flex{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
 }
 
 .locationName{
     flex:1;
-    font-size: x-large;
 }
 .weatherflex{
     display: flex;
@@ -46,7 +44,6 @@
 .Tempitem_1{
     flex: 1;
     max-height: 70px;
-
 }
 .Rainflex{
     display: flex;

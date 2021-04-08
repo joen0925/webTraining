@@ -1,25 +1,24 @@
 import React from "react";
-import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
-import Home from "./Conponent/Home";
-import About from "./Conponent/About";
-import Hot from "./Conponent/Hot";
-import Report from "./Conponent/Report";
-import styles from "./Css/Menu.css";
+import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
+import Home from "./Component/Home/Home";
+import About from "./Component/About";
+import Hot from "./Component/Hot";
+import Report from "./Component/Report";
+import Weather from "./Component/Weather/Weather";
+import "./Css/Menu.css";
 
 const Menu = () => {
-  
     return(
     <Router>
-      <div >
-            <div className={styles.flex}>
-              <Link className={styles.flex_1} to="/">新聞彙整系統</Link>
-              <Link className={styles.flex_1} to="/report">問題回報</Link>
-              <Link className={styles.flex_1} to="/hot">熱門搜尋</Link>
-              <Link className={styles.flex_1} to="/about">關於</Link>
+      <div className="a">
+            <div className="flex">              
+              <Link className="flex-item" to="/report">連絡我們</Link>
+              <Link className="flex-item">｜</Link>
+              <Link className="flex-item" to="/about">關於我們</Link>
             </div>
         <Switch>
           <Route exact path="/">
-          <Home className= "flex-1"/>
+          <Home />
           </Route>
           <Route path="/report">
           <Report/>

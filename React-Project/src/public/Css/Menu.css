@@ -1,20 +1,22 @@
 /*外容器*/
 .flex{
-	display : flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	background-color: #3B3B3B;
+	display: flex;
+    justify-content: center;
+	align-items: center;
 }
 
 /*內元件*/
-.flex_1{
-	flex: 1;
-	height: 30px;/*固高*/
-	flex-grow: 1;/*比例*/
-	flex-shrink: 1;/*極限*/
-	flex-basis: 50%;/*寬度*/
-	justify-content: left;/*靠左*/
-	margin: 1px;/*外距*/
-	color: aliceblue;
-	font-size: 25px;
+.flex-item{
+	letter-spacing: 0.1em;
+	text-decoration:none;
+	margin-top: 30px;
+	color: #FFFFFF;
+}
+.weather_Flex{
+	display : flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+	margin: 30px;
 }

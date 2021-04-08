@@ -2,7 +2,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: { 
-        index: './src/index.js' // 從哪裡開始打包
+        index: ["@babel/polyfill",'./src/index.js' ]// 從哪裡開始打包，並加入@balel/polyfill解決不能用async問題
     },
     output: { 
         filename: 'bundle.js', // 要打包成什麼
@@ -22,14 +22,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader',
-                {
-                    loader: 'css-loader',
-                    options: {
-                        modules: true, // 啟用 CSS 模組功能
-                      },
-                },
-                ],
+                use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.(jpg|png|svg)$/,
