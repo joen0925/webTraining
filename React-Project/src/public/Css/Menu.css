@@ -7,9 +7,9 @@
 
 /*內元件*/
 .flex-item{
-	text-align: center;
 	letter-spacing: 0.1em;
 	text-decoration:none;
+	margin-top: 30px;
 	color: #FFFFFF;
 }
 .weather_Flex{
