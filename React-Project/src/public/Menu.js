@@ -10,7 +10,7 @@ import "./Css/Menu.css";
 const Menu = () => {
     return(
     <Router>
-      <div>
+      <div className="a">
             <div className="flex">              
               <Link className="flex-item" to="/report">連絡我們</Link>
               <Link className="flex-item">｜</Link>
