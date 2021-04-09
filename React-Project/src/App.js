@@ -6,7 +6,6 @@ const App = (props) => {
     const style = useSelector(state => state);
     return(
         <div  style={style}>
-          {console.log(style)}
           <Menu/>
         </div>
       

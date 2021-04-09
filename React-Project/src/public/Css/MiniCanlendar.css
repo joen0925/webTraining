@@ -1,0 +1,23 @@
+.miniCanlendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniCanlendar div:nth-child(1){
+    position: absolute;
+    left: 45px;
+    top: 652px;
+    font-size: 36px;
+}
+.miniCanlendar div:nth-child(2){
+    width: 96px;
+    height: 0px;
+    border: 2px #000000 solid;
+    transform: rotate(130.79deg);
+}
+.miniCanlendar div:nth-child(3){
+    position: absolute;
+    left: 80px;
+    top: 705px;
+    font-size: 36px;
+}

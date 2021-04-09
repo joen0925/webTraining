@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import "../../Css/Home.css";
 import {changeBackgroundColor2LightBlue,changeBackgroundColor2Blue} from "../../Model/Action";
 import Weather from "../Weather/Weather"
+import MiniCanlendar from "../miniCanlendar/MiniCanlendar"
+import "../../Css/Home.css";
 const Home_1 = (props) =>{
+    
     const [message,setMessage] = useState("");
     const [viewFocus,setViewFocus] = useState("");
     const dispatch = useDispatch();
@@ -30,7 +32,7 @@ const Home_1 = (props) =>{
                 </div>                
             </div>
             <div className = "footer">
-                <div className = "footer-item1">1</div>
+                <div className = "footer-item1"><MiniCanlendar/></div>
                 <div className = "footer-item2"><Weather/></div>
             </div>
         </div>

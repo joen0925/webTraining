@@ -1,7 +1,5 @@
 import React,{useState, useEffect, useRef} from 'react';
-import styles from "../../Css/Weather.css";
-import Weather_icon from "./Weather_icon";
-import WeatherCount from "./WeatherCount";
+import "../../Css/Weather.css";
 import Weather_location from "./Weather_location";
 const Weather = () =>{
     const [data,setData] = useState({
@@ -170,28 +168,8 @@ const Weather = () =>{
         
     }
     return(
-        <div className = {styles.main}>
-        <h3 style = {{textAlign:"center"}}>36小時天氣預報</h3>
-        <div className = {styles.flex} id = "地點">
-        <div className = {styles.locationName}><Weather_location setLocationTarget= {setLocationTarget}/></div>
-        <WeatherCount setCount = {setCount} count = {count}/>
-        </div>
-        <div className = {styles.weatherflex} id = "天氣現象和時間">
-            <div className = {styles.weather_1}>{data.weatherElement[0].time[count].parameterName}</div>
-            <div className = {styles.weather_2}>開始時間:{data.weatherElement[0].time[count].startTime}</div>
-            <div className = {styles.weather_3}>結束時間:{data.weatherElement[0].time[count].endTime}</div>
-        </div>
-        <div className = {styles.Tempflex_1} id = "溫度">
-            <div className = {styles.Tempflex_2}>
-                <div>最高溫{data.weatherElement[3].time[count].parameterName}°C</div>
-                <div>最低溫{data.weatherElement[2].time[count].parameterName}°C</div>
-            </div>
-            <div className = {styles.Tempitem_1}>
-                <Weather_icon parameterValue={data.weatherElement[0].time[count].parameterValue}/>
-                {console.log(data.weatherElement[0].time[count].parameterValue)}
-            </div>
-        </div>
-        <div className = {styles.Rainflex} id="降雨機率">降雨{data.weatherElement[1].time[0].parameterName}%</div>
+        <div className = "marqee">
+        <Weather_location/>
         </div>
     )
 

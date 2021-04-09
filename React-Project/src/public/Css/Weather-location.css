@@ -1,0 +1,35 @@
+.marqee-flex{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 500px;
+    height: 96px;
+}
+
+.marqee-flex-div1{
+    display: flex;
+    color: #50AADB;
+    align-self: center;
+    font-weight: 900;
+    font-size: 96px;
+}
+.li-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.marqee-flex li{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: left;
+    color: #50AADB;
+    letter-spacing: 20px;
+}
+
+
+.marqee-flex > div >div{
+    font-weight: 900;
+    color: #50AADB;
+    font-size: 20px;
+    letter-spacing: 5px;
+}

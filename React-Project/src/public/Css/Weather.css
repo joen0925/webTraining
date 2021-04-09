@@ -1,51 +1,26 @@
-.main{
-    width:40%;
-    height:auto;
-    background-color: rgb(235, 165, 223);
-
-}
-.flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.marqee {
+	height: 109px;
+	margin: 0 auto;
+	overflow: hidden; 
+	position: relative;
 }
 
-.locationName{
-    flex:1;
-}
-.weatherflex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.weather_1{
-    flex:1;
-    color: rgb(43, 40, 40);
-}
-.weather_2{
-    flex:1;
-}
-.weather_3{
-    flex:1;
-}
-.Tempflex_1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.Tempflex_2{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.marqee  ul {
+	display: flex;
+	list-style-type: none;
+	animation: marqee 50s linear infinite;
+	position: absolute;
 }
 
-.Tempitem_1{
-    flex: 1;
-    max-height: 70px;
-}
-.Rainflex{
-    display: flex;
-    flex-direction: row;
+
+@keyframes marqee {
+	0% {
+		left: 100%;
+		transform: translateX(0%);
+	}
+
+	100% {
+		left: 0;
+		transform: translateX(-100%);
+	}
 }
