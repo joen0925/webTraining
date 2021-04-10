@@ -1,22 +1,13 @@
-/*外容器*/
 .flex{
 	display: flex;
     justify-content: center;
 	align-items: center;
 }
 
-/*內元件*/
 .flex-item{
 	letter-spacing: 0.1em;
 	text-decoration:none;
 	margin-top: 30px;
 	color: #FFFFFF;
 }
-.weather_Flex{
-	display : flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-	margin: 30px;
-}
+

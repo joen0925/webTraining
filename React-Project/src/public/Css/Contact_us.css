@@ -1,0 +1,41 @@
+.Countact_us-flex{
+    display: flex;
+    flex-direction: column;
+    width: 816px;
+    height: 557px;
+    margin: 100px;
+}
+
+.Countact_us-flex-title{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 96px;
+    color: #FFFFFF;
+}
+
+.Countact_us-flex-backbutton{
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+}
+
+.Countact_us-flex-countact{
+    display: flex;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.Countact_us-flex-countact input{
+    width: 794px;
+    height: 223px;
+}
+
+.Countact_us-flex-countact button{
+    font-weight: 200;
+    width: 132px;
+    height: 37px;
+    letter-spacing: 5px;
+}

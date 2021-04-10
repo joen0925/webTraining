@@ -1,0 +1,28 @@
+.About-flex{
+    display: flex;
+    flex-direction: column;
+    width: 785px;
+    height: 467px;
+    margin: 100px;
+}
+
+.About-flex-title{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 96px;
+    color: #FFFFFF;
+}
+
+.About-flex-backbutton{
+    width: 70px;
+    height: 70px;
+    color: #FFFFFF;
+}
+
+.About-flex-title-content{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}

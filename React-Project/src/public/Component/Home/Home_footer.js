@@ -6,8 +6,7 @@ const Home_footer = (props) =>{
         setText(false);
     }
     return(
-        <div className = "footer">
-            <div className = "footer-item1"><MiniCanlendar/></div>
+        <div className = "footer">     
             <div className = "footer-item2"><Weather/></div>
         </div>
     )

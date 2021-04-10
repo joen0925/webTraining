@@ -25,11 +25,12 @@ const Home_1 = (props) =>{
             <div className = { viewFocus ? "middleFocus" : "middle"}>
                 <form  onSubmit={changeDiv}>
                     <input type = "search" placeholder="THE NEWS" onChange={(e) => {setMessage(e.target.value)}} onBlur={change2False} onFocus={change2True} value={message} />
-                </form>            
+                </form>
                 <div>
-                    {viewFocus ? <p>熱搜:  太魯閣號  布偶貓  Switch  統神端火鍋</p>:<p></p>}
-                </div>                
+                {viewFocus ? <p className = "middleFocus-p">熱搜:  太魯閣號  布偶貓  Switch  統神端火鍋</p>:<p></p>}
+                </div>                       
             </div>
+             
             { viewFocus ? <div></div> : <Home_footer/>}
         </div>
         

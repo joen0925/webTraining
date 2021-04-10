@@ -1,30 +1,42 @@
-import React from "react";
+import React,{useState} from "react";
 import {HashRouter as Router, Switch,Route,Link} from "react-router-dom";
+import { useDispatch, useSelector, useStore } from "react-redux";
+import {changeBackgroundColor2LightBlue,titleListOnClick} from "./Model/Action"; 
 import Home from "./Component/Home/Home";
 import About from "./Component/About";
-import Hot from "./Component/Hot";
-import Report from "./Component/Report";
-import Weather from "./Component/Weather/Weather";
+import Contact_us from "./Component/Contact_us";
 import "./Css/Menu.css";
 
+
+const Title_list = () =>{
+    const store = useStore()
+    const dispatch = useDispatch();
+    const changeColorAndTitle = () =>{
+        dispatch(changeBackgroundColor2LightBlue);
+        console.table(store.getState());
+        dispatch(titleListOnClick);
+        console.table(store.getState());
+    }
+    return(
+      <div className="flex">              
+              <Link className="flex-item" to="/contact_us" onClick = {() =>changeColorAndTitle()}>連絡我們</Link>
+              <Link className="flex-item">｜</Link>
+              <Link className="flex-item" to="/about" onClick = {() => changeColorAndTitle()}>關於我們</Link>
+            </div>
+    )
+}
 const Menu = () => {
+    const titleListClick = useSelector(state => state.titleList);
     return(
     <Router>
-      <div className="a">
-            <div className="flex">              
-              <Link className="flex-item" to="/report">連絡我們</Link>
-              <Link className="flex-item">｜</Link>
-              <Link className="flex-item" to="/about">關於我們</Link>
-            </div>
+      <div>
+            {titleListClick ? <div className="flex"></div> : <Title_list/>}
         <Switch>
           <Route exact path="/">
           <Home />
           </Route>
-          <Route path="/report">
-          <Report/>
-          </Route>
-          <Route path="/hot">
-          <Hot/>
+          <Route path="/contact_us">
+          <Contact_us/>
           </Route>
           <Route path="/about">
           <About/>

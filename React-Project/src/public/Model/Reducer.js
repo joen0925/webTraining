@@ -1,4 +1,5 @@
 const initState = {
+  titleList : false,
   backgroundColor:"#50AADB",
   width: "1024px",
   height: "768px",
@@ -10,7 +11,7 @@ const itemReducer = (state = initState, action) => {
     switch (action.type) {
       case "CHANGE_BACKGROUNDCOLOR2LIGHTBLUE": {
        return  state = {
-         ...initState,
+         ...state,
          backgroundColor: action.backgroundColor
        };
       }
@@ -18,6 +19,17 @@ const itemReducer = (state = initState, action) => {
         return  state = {
           ...initState,
           backgroundColor: action.backgroundColor
+        };
+      }
+      case "TITLELIT_ONCLICK":{
+        return  state = {
+          ...initState,
+          titleList: action.titleList
+        };
+      }case "TITLELIT_OFFCLICK":{
+        return  state = {
+          ...initState,
+          titleList: action.titleList
         };
       }
       default:
