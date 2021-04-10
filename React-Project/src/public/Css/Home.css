@@ -45,20 +45,11 @@
     width: 799px;
     height: 180px;
     margin-top: 236px;
-    background: linear-gradient(273.28deg, #FFFFFF -4.19%, rgba(255, 255, 255, 0.396084) -4.19%, rgba(255, 255, 255, 0) 107.6%);
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 52px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*animation: middleFocus 3s linear forwards;*/
-}
-
-@keyframes middleFocus{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
 }
 
 .middleFocus input{
@@ -91,7 +82,7 @@
     letter-spacing: 0.17em;
 }
 
-.middleFocus-p{
+.middleFocus p{
     color: #FFFFFF;
     font-style: italic;
     letter-spacing: 0.17em;
