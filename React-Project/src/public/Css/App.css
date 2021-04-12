@@ -1,0 +1,26 @@
+@media screen and (min-width:768px) {
+    .App{
+        width: 1024px;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .App{
+        width: 767px;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media  screen and (max-width: 479px){
+    .App{
+        width: 480px;
+        height: 768px;
+        left: 0px;
+        top: 0px;
+    }
+}

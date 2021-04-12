@@ -1,9 +1,10 @@
 import React,{useState} from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import "../../Css/Home.css";
 import {changeBackgroundColor2LightBlue,changeBackgroundColor2Blue} from "../../Model/Action";
-import Weather from "../Weather/Weather"
+import Home_footer from "./Home_footer"
+import "../../Css/Home.css";
 const Home_1 = (props) =>{
+    
     const [message,setMessage] = useState("");
     const [viewFocus,setViewFocus] = useState("");
     const dispatch = useDispatch();
@@ -21,18 +22,16 @@ const Home_1 = (props) =>{
     }
     return(
         <div className = "content-flex">
-            <div className = "middle">
+            <div className = { viewFocus ? "middleFocus" : "middle"}>
                 <form  onSubmit={changeDiv}>
                     <input type = "search" placeholder="THE NEWS" onChange={(e) => {setMessage(e.target.value)}} onBlur={change2False} onFocus={change2True} value={message} />
-                </form>            
+                </form>
                 <div>
-                    {viewFocus ? <p>熱搜:  太魯閣號  布偶貓  Switch  統神端火鍋</p>:<p></p>}
-                </div>                
+                {viewFocus ? <p>熱搜:  太魯閣號  布偶貓  Switch  統神端火鍋</p>:<p></p>}
+                </div>                       
             </div>
-            <div className = "footer">
-                <div className = "footer-item1">1</div>
-                <div className = "footer-item2"><Weather/></div>
-            </div>
+             
+            { viewFocus ? <div></div> : <Home_footer/>}
         </div>
         
            

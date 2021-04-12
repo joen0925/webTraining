@@ -1,0 +1,90 @@
+@media screen and (min-width:768px) {
+    .About-flex{
+        display: flex;
+        flex-direction: column;
+        width: 785px;
+        height: 467px;
+        margin: 100px;
+    }
+
+    .About-flex-title{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 96px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-backbutton{
+        width: 70px;
+        height: 70px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-title-content{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .About-flex{
+        display: flex;
+        flex-direction: column;
+        width: 567px;
+        height: 350px;
+        margin: 100px;
+    }
+
+    .About-flex-title{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 72px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-backbutton{
+        width: 53px;
+        height: 53px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-title-content{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+    }
+}
+@media  screen and (max-width: 479px){
+    .About-flex{
+        display: flex;
+        flex-direction: column;
+        width: 369px;
+        height: 350px;
+        margin: 100px;
+    }
+
+    .About-flex-title{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 72px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-backbutton{
+        width: 53px;
+        height: 53px;
+        color: #FFFFFF;
+    }
+
+    .About-flex-title-content{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #FFFFFF;
+        letter-spacing: 2px;
+    }
+}

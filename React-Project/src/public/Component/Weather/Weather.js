@@ -1,7 +1,5 @@
 import React,{useState, useEffect, useRef} from 'react';
-import styles from "../../Css/Weather.css";
-import Weather_icon from "./Weather_icon";
-import WeatherCount from "./WeatherCount";
+import "../../Css/Weather.css";
 import Weather_location from "./Weather_location";
 const Weather = () =>{
     const [data,setData] = useState({
@@ -193,6 +191,7 @@ const Weather = () =>{
     }
     return(
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div>
             <h3>36小時天氣預報</h3>
             <select >
@@ -242,6 +241,10 @@ const Weather = () =>{
             </div>
         </div>
         <div className = {styles.Rainflex} id="降雨機率">降雨{data.weatherElement[1].time[0].parameterName}%</div>
+>>>>>>> Select_Test
+=======
+        <div className = "marqee">
+        <Weather_location/>
 >>>>>>> Select_Test
         </div>
     )

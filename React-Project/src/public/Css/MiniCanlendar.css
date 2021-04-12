@@ -1,0 +1,25 @@
+.miniCanlendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniCanlendar div:nth-child(1){
+    position: absolute;
+    left: 45px;
+    top: 659px;
+    font-size: 28px;
+    font-family: Microsoft YaHei;
+}
+.miniCanlendar div:nth-child(2){
+    width: 96px;
+    height: 0px;
+    border: 0.5px #000000 solid;
+    transform: rotate(130.79deg);
+}
+.miniCanlendar div:nth-child(3){
+    position: absolute;
+    left: 80px;
+    top: 706px;
+    font-size: 28px;
+    font-family: Microsoft YaHei;
+}

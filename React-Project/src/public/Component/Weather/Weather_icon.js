@@ -30,22 +30,21 @@ const Weather_icon = (props) =>{
         Snowing: [23, 37, 42],
       };
       const weatherIcons = {
-          Thunderstorm: <img src ={Thunderstorm} style ={{height: "70px" }}></img>,
-          Clear: <img src ={Clear} style ={{height: "70px" }}></img>,
-          CloudyFog: <img src ={CloudyFog} style ={{height: "70px" }}></img>,
-          Cloudy: <img src ={Cloudy} style ={{height: "70px" }}></img>,
-          Fog: <img src ={Fog} style ={{height: "70px" }}></img>,
-          MostCloudy:<img src ={MostCloudy} style ={{height: "70px" }}></img>,
-          MostCloudyRain:<img src ={MostCloudyRain} style ={{height: "70px" }}></img>,
-          PartiallyClearWithRain: <img src ={PartiallyClearWithRain} style ={{height: "70px" }}></img>,
-          Snowing: <img src ={Snowing} style ={{height: "70px" }}></img>,
+          Thunderstorm: <img src ={Thunderstorm} style ={{height: "40px",marginBottom: "50px" }}></img>,
+          Clear: <img src ={Clear} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          CloudyFog: <img src ={CloudyFog} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          Cloudy: <img src ={Cloudy} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          Fog: <img src ={Fog} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          MostCloudy:<img src ={MostCloudy} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          MostCloudyRain:<img src ={MostCloudyRain} style ={{height: "40px" ,marginBottom: "50px" }}></img>,
+          PartiallyClearWithRain: <img src ={PartiallyClearWithRain} style ={{height: "40px",marginBottom: "50px"  }}></img>,
+          Snowing: <img src ={Snowing} style ={{height: "40px",marginBottom: "50px"  }}></img>,
       };
       const findWeatherType = (weatherCode) => {
         const [weatherType] =
           Object.entries(weatherTypes).find(([weatherType, weatherCodes]) =>
             weatherCodes.includes(Number(weatherCode))
           ) || [];
-          console.log("typeof(wearherType" + typeof(weatherType));
         return weatherType;
       };
     return(
