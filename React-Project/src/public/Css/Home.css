@@ -131,7 +131,7 @@
 
     .middle{
         width: 600px;
-        height: 180px;
+        height: 135px;
         margin-top: 236px;
         background: linear-gradient(273.28deg, #FFFFFF -4.19%, rgba(255, 255, 255, 0.396084) -4.19%, rgba(255, 255, 255, 0) 107.6%);
         border: 1px solid #FFFFFF;
@@ -145,7 +145,7 @@
 
     .middle input{
         width: 513px;
-        height: 113px;
+        height: 85px;
         left: 170px;
         top: 317px;
         outline:none;
@@ -165,7 +165,7 @@
 
     .middleFocus{
         width: 600px;
-        height: 180px;
+        height: 135px;
         margin-top: 236px;
         margin-left: 25px;
         display: flex;
@@ -176,7 +176,7 @@
 
     .middleFocus input{
         width: 513px;
-        height: 113px;
+        height: 85px;
         left: 170px;
         top: 317px;
         outline:none;
@@ -250,7 +250,7 @@
 
     .middle{
         width: 368px;
-        height: 100px;
+        height: 85px;
         margin-top: 236px;
         background: linear-gradient(273.28deg, #FFFFFF -4.19%, rgba(255, 255, 255, 0.396084) -4.19%, rgba(255, 255, 255, 0) 107.6%);
         border: 1px solid #FFFFFF;
@@ -264,7 +264,7 @@
 
     .middle input{
         width: 315px;
-        height: 62px;
+        height: 53px;
         left: 170px;
         top: 317px;
         outline:none;
@@ -285,7 +285,7 @@
 
     .middleFocus{
         width: 368px;
-        height: 100px;
+        height: 85px;
         margin-top: 236px;
         margin-left: 25px;
         display: flex;
@@ -296,7 +296,7 @@
 
     .middleFocus input{
         width: 315px;
-        height: 62px;
+        height: 53px;
         left: 170px;
         top: 317px;
         outline:none;
