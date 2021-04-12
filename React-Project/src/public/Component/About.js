@@ -1,14 +1,13 @@
 import React,{useEffect} from "react";
 import Backbutton from "../Images/Backbutton.png";
 import { useDispatch, useSelector } from "react-redux";
-import {changeBackgroundColor2Blue} from "../Model/Action"; 
 import "../Css/About.css";
 const About = () =>{
     //小BUG，使用GOOGLE Chrome的上一頁不會換顏色
     const dispatch = useDispatch();
     return(
         <div className = "About-flex">
-            <img className = "About-flex-backbutton" src={Backbutton} onClick={()=>{history.back();dispatch(changeBackgroundColor2Blue)}}/>
+            <img className = "About-flex-backbutton" src={Backbutton} onClick={()=>{history.back();}}/>
             <div className = "About-flex-title">About us</div>
             <div className = "About-flex-title-content">
                 <p>現今社會在科技進步的情況下，相信大家已經很少去便利超商買報紙了吧!<br></br>

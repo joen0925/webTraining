@@ -45,7 +45,7 @@
     width: 799px;
     height: 180px;
     margin-top: 236px;
-    margin-left: 30px;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,12 +87,14 @@
     font-style: italic;
     letter-spacing: 0.17em;
     font-weight:100;
-    animation: middleFocus-p 3s linear forwards;
+    animation: middleFocus-p 1s linear forwards;
 }
 
 @keyframes middleFocus-p{
-    0% {opacity: 0;left:0px;top:100px}
-    100% {opacity: 1;left:0px;top:0px}
+    
+    0% {opacity: 0;transform: translateY(100px);}
+    50% {opacity: 0;transform: translateY(50px);}
+    100% {opacity: 1;transform: translateY(0px);}
 }
 
 .footer{
