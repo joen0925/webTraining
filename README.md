@@ -7,4 +7,4 @@
 * React
 * React-Redux
 ## 介紹
-![測試](https://github.com/joen0925/webTraining/blob/Select_Test/GIF_or_PNG/%E6%B8%AC%E8%A9%A6.gif)
+![介紹](https://github.com/joen0925/webTraining/blob/main/GIF_or_PNG/%E6%AD%A3%E5%BC%8F%E4%BB%8B%E7%B4%B9.gif)
