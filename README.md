@@ -1,4 +1,4 @@
-# Font-Ed News design
+# Font-End News design
 前端新聞網頁設計
 ## 工具
 * Webpack
