@@ -1,10 +1,7 @@
 import React,{useEffect} from "react";
 import Backbutton from "../Images/Backbutton.png";
-import { useDispatch, useSelector } from "react-redux";
 import "../Css/About.css";
 const About = () =>{
-    //小BUG，使用GOOGLE Chrome的上一頁不會換顏色
-    const dispatch = useDispatch();
     return(
         <div className = "About-flex">
             <img className = "About-flex-backbutton" src={Backbutton} onClick={()=>{history.back();}}/>
@@ -14,7 +11,8 @@ const About = () =>{
                 大部分都是開電腦上網尋找網路新聞，但是往往新聞都是長篇大論，看都懶得看了吧!<br></br>
                 於是我們為使用者設計出只要搜尋關鍵字，就能找出使用者搜尋的相關新聞。<br></br>
                 並提共使用者既方便又可以快速閱讀新聞的介面~<br></br>
-                團隊名單:蔡佳和、麥喬恩、陳建維、黃嘉祖</p>
+                前端:喬恩　美術:喬伊<br></br>
+                啟發來源:大學專題</p>
             </div>
         </div>
     )
