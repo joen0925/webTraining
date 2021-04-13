@@ -1,9 +1,10 @@
-# webTraining
-網頁設計練習
+# Font-Eed news design
+前端新聞網頁設計
 ## 工具
-* webpack
-* js
-* npm
+* Webpack
+* Javascript
+* Npm
 * React
+* React-Redux
 ## 介紹
 ![測試](https://github.com/joen0925/webTraining/blob/Select_Test/GIF_or_PNG/%E6%B8%AC%E8%A9%A6.gif)
