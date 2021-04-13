@@ -1,5 +1,6 @@
 @media screen and (min-width:768px) {
     .App{
+        margin: auto;
         width: 1024px;
         height: 768px;
         left: 0px;
@@ -9,6 +10,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .App{
+        margin-left: auto;
         width: 767px;
         height: 768px;
         left: 0px;
@@ -18,6 +20,7 @@
 
 @media  screen and (max-width: 479px){
     .App{
+        margin: auto;
         width: 480px;
         height: 768px;
         left: 0px;
